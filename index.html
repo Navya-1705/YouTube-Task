@@ -1,11 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>YouTube</title>
 </head>
+
 <body>
-    
+    <nav class="nav">
+        <div class="left">
+            <i class="fa-solid fa-bars i" id="menuToggle"></i>
+            <div class="logo">
+                <i class="fa-brands fa-youtube i"></i>
+                <span id="span">YouTube</span><sup>IN</sup>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="search-container">
+                <input type="text" placeholder="search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="mic-btn">
+                <i class="fa-solid fa-microphone i"></i>
+            </div>
+        </div>
+        <div class="right">
+            <div id="create-btn">
+                <i class="fa-solid fa-plus i"></i><span>Create</span>
+            </div>
+            <i class="fa-regular fa-bell i"></i>
+            <div class="profile">
+                <i class="fa-solid fa-circle-user i"></i>
+            </div>
+        </div>
+        <div class="profile-menu" id="profileMenu">
+            <div class="profile-header">
+                <i class="fa-solid fa-circle-user i" class="profile"></i>
+            </div>
+            <div>
+                <p>Navya</p><br />
+                <p>navya@gmail.com</p><br />
+                <a href="">Create a Channel</a>
+            </div>
+            <hr />
+            <ul>
+                <li><i class="fa-brands fa-google"></i>Google</li>
+                <li><i class="fa-solid fa-user"></i>Switch Account
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li><i class="fa-solid fa-arrow-right-from-bracket"></i>Sign Out</li>
+                <hr />
+                <li><i class="fa-brands fa-square-youtube"></i>YouTube Studio</li>
+                <li><i class="fa-solid fa-sack-dollar"></i>Purchase and Membership</li>
+                <hr />
+                <li><i class="fa-solid fa-image-portrait"></i>Your data in YouTube</li>
+                <li><i class="fa-regular fa-moon"></i>Appearence:Device theme
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li><i class="fa-solid fa-language"></i>Language: English
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li><i class="fa-solid fa-user-lock"></i>Restricted Mode:off
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li><i class="fa-solid fa-location"></i>Location: India
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li><i class="fa-regular fa-keyboard"></i>Keyboard shortcuts</li>
+                <hr />
+                <li><i class="fa-solid fa-gear"></i>Settings</li>
+                <hr />
+                <li><i class="fa-solid fa-circle-question"></i>Help</li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <ul class="show">
+                <li class="icon"><i class="fa-solid fa-house"><span>Home</span></i></li>
+                <li class="icon"><i class="fa-solid fa-video"><span>Shorts</span></i></li>
+                <li class="icon"><i class="fa-brands fa-youtube"><span>Subscription</span></i></li>
+                <li class="icon"><i class="fa-solid fa-user"><span>You</span></i></li>
+            </ul>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-video"></i>
+                    <span>Shorts</span>
+                </li>
+                <li>
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>Subscriptions</span>
+                </li>
+            </ul>
+            <hr />
+            <div class="section-title">You</div>
+            <ul>
+                <li><i class="fas fa-history"></i><span>History</span></li>
+                <li><i class="fas fa-list"></i><span>PlayList</span></li>
+                <li><i class="fas fa-clock"></i><span>Watch Later</span></li>
+                <li><i class="fas fa-thumbs-up"></i><span>Liked Videos</span></li>
+            </ul>
+            <hr />
+            <div class="section-title">Explore</div>
+            <ul>
+                <li><i class="fas fa-fire"></i><span>Trending</span></li>
+                <li><i class="fas fa-shopping-cart"></i><span>Shopping</span></li>
+                <li><i class="fas fa-music"></i><span>Music</span></li>
+                <li><i class="fas fa-newspaper"></i><span>News</span></li>
+                <li><i class="fas fa-headset"></i><span>Live</span></li>
+            </ul>
+            <hr />
+            <ul>
+                <li><i class="fas fa-gear"></i><span>Settings</span></li>
+                <li><i class="fa-regular fa-flag"></i><span>Report History</span></li>
+                <li><i class="fa-solid fa-circle-question"></i><span>Help</span></li>
+                <li><i class="fa-solid fa-circle-info"></i><span>Send Feedback</span></li>
+            </ul>
+        </aside>
+
+
+        <main class="content">
+            <div class="filters">
+                <i class="fa-solid fa-angle-left"></i>
+                <div class="filter-list">
+                    <span class="active">All</span>
+                    <span>Mixes</span>
+                    <span>Music</span>
+                    <span>Podcasts</span>
+                    <span>Live</span>
+                    <span>Gaming</span>
+                    <span>News</span>
+                    <span>Sports</span>
+                    <span>Learning</span>
+                    <span>Technologies</span>
+                    <span>Trending</span>
+                    <span>Movies</span>
+                    <span>Shopping</span>
+                    <span>Stories</span>
+                    <span>Beauty</span>
+                    <span>Comedy Movies</span>
+                    <span>Apps</span>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="video-grid" id="videoGrid"></div>
+        </main>
+    </div>
+
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <button class="close-video" id="closeVideo">×</button>
+            <div class="video-player-wrapper">
+                <iframe id="videoPlayer" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
 </body>
+
 </html>
